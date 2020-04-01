@@ -1,13 +1,62 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Liam Broza</title>
-        <meta name="description" content="Liam Broza">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    </head>
-    <body>
-      <h1>Hello world! This is Liam Broza.</h1>
-    </body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Liam Life AR</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  </head>
+
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene
+      vr-mode-ui="enabled: false"
+      embedded
+      arjs="sourceType: webcam; debugUIEnabled: false;"
+    >
+    <a-text
+      value="Home Sweet Home"
+      look-at="[gps-camera]"
+      scale="120 120 120"
+      gps-entity-place="latitude: 33.514720; longitude: -117.721681;"
+    ></a-text> 
+
+    <a-text
+      value="Dad"
+      look-at="[gps-camera]"
+      scale="120 120 120"
+      gps-entity-place="latitude: 33.124728; longitude: -117.210084;"
+    ></a-text> 
+
+    <a-text
+      value="Laguna Ritz"
+      look-at="[gps-camera]"
+      scale="120 120 120"
+      gps-entity-place="latitude: 33.475794; longitude: -117.717860;"
+    ></a-text> 
+
+    <a-text
+      value="Santiago Peak"
+      look-at="[gps-camera]"
+      scale="120 120 120"
+      gps-entity-place="latitude: 33.710363; longitude: -117.533666;"
+    ></a-text>
+
+    <a-text
+      value="El Niguel Country Club"
+      look-at="[gps-camera]"
+      scale="120 120 120"
+      gps-entity-place="latitude: 33.511592; longitude: -117.715970;"
+    ></a-text>
+
+    <a-text
+      value="Alex & Shaw"
+      look-at="[gps-camera]"
+      scale="120 120 120"
+      gps-entity-place="latitude: 34.044847; longitude: -118.251783;"
+    ></a-text> 
+      <a-camera gps-camera rotation-reader> </a-camera>
+    </a-scene>
+  </body>
 </html>
